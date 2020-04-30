@@ -229,6 +229,26 @@
     }
 }
 
+- (IBAction)goToChatRoom:(id)sender {
+    [self performSegueWithIdentifier:@"chatSeg" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"chatSeg"]) {
+        if (@available(iOS 12.0, *)) {
+            ChatViewController *chat = segue.destinationViewController;
+            chat.roomName = self.roomName;
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        
+    } else if ([segue.identifier isEqualToString:@"showSettings"]) {
+        [SwiftToObjc prepareForShowSettingsSegue:segue];
+    }
+}
+
+
 - (IBAction)hangupPressed:(id)sender {
     self.statsViewController.room = nil;
 
@@ -242,6 +262,7 @@
 - (IBAction)flipCameraPressed:(id)sender {
     [self.localMediaController flipCamera];
 }
+
 
 - (void)refreshLocalParticipantVideoView {
     // Our local Participant is always first.

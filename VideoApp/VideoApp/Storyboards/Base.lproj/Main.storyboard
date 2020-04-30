@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -511,6 +511,31 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-y5-s69" userLabel="Chat Button" customClass="VariableAlphaToggleButton">
+                                <rect key="frame" x="346" y="627" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="chatButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2XS-NQ-1zH"/>
+                                    <constraint firstAttribute="width" constant="48" id="3eK-mG-2pw"/>
+                                </constraints>
+                                <state key="normal" image="chat-black">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="unmute-audio"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stateNormalAlpha">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="stateSelectedAlpha">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToChatRoom:" destination="HNa-RJ-vcm" eventType="touchUpInside" id="TiC-8t-E9Q"/>
+                                </connections>
+                            </button>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhb-7D-ZBf" userLabel="Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -823,6 +848,7 @@
                             <constraint firstItem="sqN-Vg-1NI" firstAttribute="top" secondItem="xjQ-ct-136" secondAttribute="bottom" constant="8" id="4WW-4D-eRi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dW2-aV-srT" secondAttribute="trailing" id="5wg-5S-wmQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wU6-sZ-Ash" secondAttribute="trailing" constant="-16" id="8p6-3i-Gxq"/>
+                            <constraint firstItem="sqN-Vg-1NI" firstAttribute="top" secondItem="Tdt-y5-s69" secondAttribute="bottom" constant="63" id="EGU-Zo-puL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xjQ-ct-136" secondAttribute="trailing" id="Eqn-D8-yVk"/>
                             <constraint firstItem="IAx-eZ-xI6" firstAttribute="centerX" secondItem="Rmp-3a-cAl" secondAttribute="centerX" id="FHm-dj-Xh2"/>
                             <constraint firstItem="dmD-RM-eiS" firstAttribute="centerX" secondItem="Rmp-3a-cAl" secondAttribute="centerX" id="HJv-HD-7gU"/>
@@ -841,6 +867,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="wU6-sZ-Ash" secondAttribute="leading" constant="16" id="kxk-hP-0Bb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hmh-by-K65" secondAttribute="trailing" id="mn0-Qq-8En"/>
                             <constraint firstItem="DEq-Qj-jWj" firstAttribute="centerX" secondItem="xjQ-ct-136" secondAttribute="centerX" id="nv7-OT-p5A"/>
+                            <constraint firstItem="Tdt-y5-s69" firstAttribute="leading" secondItem="xjQ-ct-136" secondAttribute="leading" id="oIH-MU-IS7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Hmh-by-K65" secondAttribute="leading" id="ogB-fe-Alg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="sVx-DL-H08" secondAttribute="leading" id="pof-ih-ka4"/>
                             <constraint firstItem="Zhb-7D-ZBf" firstAttribute="leading" secondItem="5Nf-Ic-CeP" secondAttribute="leading" id="qkQ-kH-ilJ"/>
@@ -873,6 +900,7 @@
                         <outlet property="remoteParticipantNetworkQualityIndicator" destination="D8d-Bi-clM" id="0CU-Wb-gyQ"/>
                         <outlet property="videoCollectionView" destination="wU6-sZ-Ash" id="Gd8-rN-kzm"/>
                         <outlet property="videoToggleButton" destination="sqN-Vg-1NI" id="6xi-Va-rVY"/>
+                        <segue destination="J5W-Xc-CI7" kind="showDetail" identifier="chatSeg" id="wDG-uO-dM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PuS-AJ-Sbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -998,7 +1026,7 @@
                     <viewLayoutGuide key="safeArea" id="r6b-yI-Jvo"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="897" y="450"/>
+            <point key="canvasLocation" x="1948" y="450"/>
         </scene>
         <!--Settings-->
         <scene sceneID="JYB-aD-ZXg">
@@ -1099,9 +1127,25 @@
             </objects>
             <point key="canvasLocation" x="-2516" y="36"/>
         </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="gIT-bh-2vy">
+            <objects>
+                <viewController id="J5W-Xc-CI7" customClass="ChatViewController" customModule="VideoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Do6-3W-w6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Igp-Fd-YhZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVq-Ck-PPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="445"/>
+        </scene>
     </scenes>
     <resources>
         <image name="audio-muted-white" width="24" height="24"/>
+        <image name="chat-black" width="63" height="54.5"/>
         <image name="dominant_speaker_indicator" width="24" height="24"/>
         <image name="hangup" width="26" height="10"/>
         <image name="mute-audio" width="14" height="19"/>

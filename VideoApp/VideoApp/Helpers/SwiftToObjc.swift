@@ -21,6 +21,9 @@ import Foundation
     @objc static var userDisplayName: String {
         UserStore(appSettingsStore: AppSettingsStore.shared, authStore: AuthStore.shared).user.displayName
     }
+    @objc static var userId: String {
+        UserStore(appSettingsStore: AppSettingsStore.shared, authStore: AuthStore.shared).user.id
+    }
     @objc static var roomNameFromDeepLink: String? {
         guard let deepLink = DeepLinkStore.shared.consumeDeepLink() else { return nil }
         

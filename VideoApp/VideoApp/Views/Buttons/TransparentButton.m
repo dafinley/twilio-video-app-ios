@@ -1,5 +1,5 @@
 //
-//  Copyright (C) 2019 Twilio, Inc.
+//  Copyright (C) 2020 Twilio, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -14,9 +14,15 @@
 //  limitations under the License.
 //
 
-import Foundation
+#import "TransparentButton.h"
 
-struct User {
-    let displayName: String
-    let id: String
+@implementation TransparentButton
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.layer.backgroundColor = [[UIColor clearColor] CGColor];
+    self.layer.borderColor = [[UIColor clearColor] CGColor];
+    self.layer.cornerRadius = self.bounds.size.width / 2.0;
 }
+
+@end

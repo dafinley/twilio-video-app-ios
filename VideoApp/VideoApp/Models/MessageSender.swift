@@ -1,5 +1,5 @@
 //
-//  Copyright (C) 2019 Twilio, Inc.
+//  Copyright (C) 2020 Twilio, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -15,20 +15,14 @@
 //
 
 import Foundation
+import MessageKit
 
-protocol UserStoreReading: AnyObject {
-    var user: User { get }
-}
 
-class UserStore: UserStoreReading {
-    var user: User {
-        User(displayName: appSettingsStore.userIdentity.nilIfEmpty ?? authStore.userDisplayName, id: UUID().uuidString)
-    }
-    private let appSettingsStore: AppSettingsStoreWriting
-    private let authStore: AuthStoreReading
-
-    init(appSettingsStore: AppSettingsStoreWriting, authStore: AuthStoreReading) {
-        self.appSettingsStore = appSettingsStore
-        self.authStore = authStore
+public struct MessageSender: SenderType {
+    public let senderId: String
+    public let name: String?
+    
+    public var displayName: String {
+      return name ?? ""
     }
 }

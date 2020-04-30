@@ -1,5 +1,5 @@
 //
-//  Copyright (C) 2019 Twilio, Inc.
+//  Copyright (C) 2020 Twilio, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -14,9 +14,22 @@
 //  limitations under the License.
 //
 
-import Foundation
+#import "ChatViewController.h"
+#import "LocalMediaController.h"
+#import "RoomViewController.h"
+#import "VariableAlphaToggleButton.h"
+#import "VideoApp-Swift.h"
+@import MessageKit;
+@import TwilioVideo;
 
-struct User {
-    let displayName: String
-    let id: String
+@implementation ChatViewController
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
 }
+
+- (void) setupChatView {
+    
+}
+
+@end

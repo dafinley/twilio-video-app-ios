@@ -5,3 +5,4 @@
 #import "LobbyViewController.h"
 #import "LocalMediaController.h"
 #import "VideoAppCamera.h"
+#import "RoomViewController.h"

@@ -67,6 +67,24 @@
 		8AC4999A232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		8AC4999B232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
 		8AC4999C232A18D2005A4B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC49999232A18D2005A4B35 /* SceneDelegate.swift */; };
+		8B117A73244B976F006D605A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A72244B976F006D605A /* ChatViewController.swift */; };
+		8B117A75244B9A7A006D605A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A74244B9A7A006D605A /* Message.swift */; };
+		8B35858C244C97950036CD9B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A72244B976F006D605A /* ChatViewController.swift */; };
+		8B35858D244C97950036CD9B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A72244B976F006D605A /* ChatViewController.swift */; };
+		8B35858F244CECD60036CD9B /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35858E244CECD60036CD9B /* MessageSender.swift */; };
+		8B358591244CED180036CD9B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358590244CED180036CD9B /* Member.swift */; };
+		8B358592244CEE410036CD9B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358590244CED180036CD9B /* Member.swift */; };
+		8B358593244CEE420036CD9B /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358590244CED180036CD9B /* Member.swift */; };
+		8B358594244CEE460036CD9B /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35858E244CECD60036CD9B /* MessageSender.swift */; };
+		8B358595244CEE460036CD9B /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35858E244CECD60036CD9B /* MessageSender.swift */; };
+		8B358596244CEE490036CD9B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A74244B9A7A006D605A /* Message.swift */; };
+		8B358597244CEE490036CD9B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B117A74244B9A7A006D605A /* Message.swift */; };
+		8B358599245317680036CD9B /* StringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358598245317680036CD9B /* StringHash.swift */; };
+		8B35859A245404790036CD9B /* StringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358598245317680036CD9B /* StringHash.swift */; };
+		8B35859B2454047A0036CD9B /* StringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B358598245317680036CD9B /* StringHash.swift */; };
+		8B35859E2455DC200036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
+		8B35859F2455DE230036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
+		8B3585A02455DE240036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
 		AE0CFB3237FBE318B731B713 /* Pods_Video_Twilio_Video_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E708CB2AB7DFB73C47D7AB38 /* Pods_Video_Twilio_Video_Community.framework */; };
 		B9C6EDCF2651C8C600E239F6 /* Pods_Video_Twilio_Video_TwilioTests_Video_InternalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ADEE0522D37947FC5C015A /* Pods_Video_Twilio_Video_TwilioTests_Video_InternalTests.framework */; };
 		C5FC580267C650371E9AB56B /* Pods_Video_Twilio_Video_Internal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56431190FD8D2B0FFBB6F56 /* Pods_Video_Twilio_Video_Internal.framework */; };
@@ -537,6 +555,12 @@
 		7BF86F7A57DAC623A7A9F61B /* Pods-Video-Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Community.debug.xcconfig"; path = "Target Support Files/Pods-Video-Community/Pods-Video-Community.debug.xcconfig"; sourceTree = "<group>"; };
 		8A14E433CF4662B19E44A3BE /* Pods-Video-Twilio-Video-Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-Community.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-Community/Pods-Video-Twilio-Video-Community.debug.xcconfig"; sourceTree = "<group>"; };
 		8AC49999232A18D2005A4B35 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B117A72244B976F006D605A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8B117A74244B9A7A006D605A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8B35858E244CECD60036CD9B /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		8B358590244CED180036CD9B /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		8B358598245317680036CD9B /* StringHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHash.swift; sourceTree = "<group>"; };
+		8B35859D2455DC200036CD9B /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		97650562A7ED4405DB1FC500 /* Pods-Video-Twilio-Video-Internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-Internal.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-Internal/Pods-Video-Twilio-Video-Internal.debug.xcconfig"; sourceTree = "<group>"; };
 		97E391D410028974C4641B09 /* Pods-Video-Twilio-Video-TwilioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests/Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10066E39687E61F986470C1 /* Pods_Video_Twilio_Video_TwilioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Twilio_Video_TwilioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -812,6 +836,7 @@
 		241282391E36A6AB002198BE /* VideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B35859C2455DC000036CD9B /* Service */,
 				24693EEA1E393F1B00F21DDC /* API */,
 				DC44C2CC23871C2000205174 /* Helpers */,
 				DCE9B05D235A46EA008E5B5B /* IOSVideoAppSecrets */,
@@ -833,6 +858,7 @@
 		24491F791E37F89F00028B24 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BA8D9D62449C91300F8CCE2 /* Chat */,
 				DC0446C323A2D5D10072F597 /* Lobby */,
 				DC0446C423A2D5E70072F597 /* Room */,
 				DCAEBF4B2384880300141D2D /* Settings */,
@@ -859,6 +885,9 @@
 				24C239F51EDF263800AA9419 /* RemoteParticipantUIModel.m */,
 				24A723E51ECE1CBD00486E7A /* StatsUIModel.h */,
 				24A723E61ECE1CBD00486E7A /* StatsUIModel.m */,
+				8B117A74244B9A7A006D605A /* Message.swift */,
+				8B35858E244CECD60036CD9B /* MessageSender.swift */,
+				8B358590244CED180036CD9B /* Member.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -908,6 +937,22 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		8B35859C2455DC000036CD9B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8B35859D2455DC200036CD9B /* WebSocketService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8BA8D9D62449C91300F8CCE2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8B117A72244B976F006D605A /* ChatViewController.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		DC04467A238DD55C0072F597 /* Video-TwilioUITests */ = {
@@ -1083,6 +1128,7 @@
 				DC44C2C82387118400205174 /* UITableViewCellHelpers.swift */,
 				DCEC3D0D23860BBC00EBDEBF /* UITableViewHelpers.swift */,
 				DCC7E3542406ED3900431AC3 /* UserDefaultsProtocol.swift */,
+				8B358598245317680036CD9B /* StringHash.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1827,7 +1873,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -1838,7 +1888,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -1881,7 +1935,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -1894,7 +1952,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -2007,7 +2069,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -2020,7 +2086,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -2111,7 +2181,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -2122,7 +2196,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -2189,7 +2267,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -2200,7 +2282,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -2267,7 +2353,11 @@
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -2280,7 +2370,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputBarAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -2376,11 +2470,14 @@
 				DC82A38C24008AE00081578C /* SelectSDKLogLevelViewModel.swift in Sources */,
 				DCC7E3552406ED3900431AC3 /* UserDefaultsProtocol.swift in Sources */,
 				DC44C2C92387118400205174 /* UITableViewCellHelpers.swift in Sources */,
+				8B117A73244B976F006D605A /* ChatViewController.swift in Sources */,
 				DC39248C2416A1D80068E33F /* SelectEnvironmentViewModel.swift in Sources */,
 				DC3924892416A1D80068E33F /* SelectEnvironmentViewModelFactory.swift in Sources */,
 				DCEC3D0E23860BBC00EBDEBF /* UITableViewHelpers.swift in Sources */,
+				8B35858F244CECD60036CD9B /* MessageSender.swift in Sources */,
 				DC44C2C223870D0800205174 /* BasicCell.swift in Sources */,
 				DC8AA8D32367A399006C06D5 /* TestSceneDelegate.swift in Sources */,
+				8B35859E2455DC200036CD9B /* WebSocketService.swift in Sources */,
 				DC1C2F8E23AC30070044FB4D /* AppInfoStoreFactory.swift in Sources */,
 				DC8EAE4823BA9F390045018F /* WindowSceneObserving.swift in Sources */,
 				DC1C2F9223AC34B30044FB4D /* BundleProtocol.swift in Sources */,
@@ -2449,6 +2546,7 @@
 				DC044684238EF6C20072F597 /* Environment.swift in Sources */,
 				24C239F61EDF263800AA9419 /* RemoteParticipantUIModel.m in Sources */,
 				DCAEBF47238446F500141D2D /* SelectTopologyViewModel.swift in Sources */,
+				8B117A75244B9A7A006D605A /* Message.swift in Sources */,
 				DCC7E36E24085B7200431AC3 /* CommunityCreateTwilioAccessTokenRequest.swift in Sources */,
 				DCF461612385B13000DD8FEA /* AdvancedSettingsViewModel.swift in Sources */,
 				DC1C2F7E23A445740044FB4D /* Notifications.swift in Sources */,
@@ -2475,6 +2573,7 @@
 				DC044699238F20130072F597 /* SwiftToObjc.swift in Sources */,
 				DC8EAE4323BA96C00045018F /* URLOpenerFactory.swift in Sources */,
 				24CF99DC1ECF36E8007C8631 /* VariableAlphaToggleButton.m in Sources */,
+				8B358591244CED180036CD9B /* Member.swift in Sources */,
 				DC8AA8CF2367A10E006C06D5 /* TestAppDelegate.swift in Sources */,
 				DCF461652385B17A00DD8FEA /* AdvancedSettingsViewControllerFactory.swift in Sources */,
 				DC1C2F8623A6E7050044FB4D /* DispatchQueueProtocol.swift in Sources */,
@@ -2482,6 +2581,7 @@
 				DCAEBF1C2383342C00141D2D /* DestructiveButtonCell.swift in Sources */,
 				DCD940B9243BD6DA00D9ECC5 /* LocalVideoTrackHelpers.swift in Sources */,
 				DCEC3D0A238608B500EBDEBF /* EditUserIdentityViewModelFactory.swift in Sources */,
+				8B358599245317680036CD9B /* StringHash.swift in Sources */,
 				DCD7674B23DA336600A2939C /* DeepLink.swift in Sources */,
 				DCA53950235F765D00CA26FB /* AuthFlow.swift in Sources */,
 				8AC4999A232A18D2005A4B35 /* SceneDelegate.swift in Sources */,
@@ -2512,8 +2612,10 @@
 				DC39248A2416A1D80068E33F /* SelectEnvironmentViewModelFactory.swift in Sources */,
 				DCEC3D0F23860BBC00EBDEBF /* UITableViewHelpers.swift in Sources */,
 				DC44C2C323870D0800205174 /* BasicCell.swift in Sources */,
+				8B358594244CEE460036CD9B /* MessageSender.swift in Sources */,
 				DC8AA8D42367A399006C06D5 /* TestSceneDelegate.swift in Sources */,
 				DC1C2F8F23AC30070044FB4D /* AppInfoStoreFactory.swift in Sources */,
+				8B35859F2455DE230036CD9B /* WebSocketService.swift in Sources */,
 				DC8EAE4923BA9F390045018F /* WindowSceneObserving.swift in Sources */,
 				DC1C2F9323AC34B30044FB4D /* BundleProtocol.swift in Sources */,
 				DCEC3D1423861C9800EBDEBF /* SelectOptionViewModelFactory.swift in Sources */,
@@ -2544,11 +2646,13 @@
 				DCB7C18A2405BE40009DEA70 /* KeychainStore.swift in Sources */,
 				DCAEBF442384450300141D2D /* SelectVideoCodecViewModel.swift in Sources */,
 				DCB64B4A240995A100E090BE /* APIHTTPMethod.swift in Sources */,
+				8B35858C244C97950036CD9B /* ChatViewController.swift in Sources */,
 				DCF4615623859BB800DD8FEA /* AppInfoStore.swift in Sources */,
 				DCA53955235F89BE00CA26FB /* CommunityAuthStore.swift in Sources */,
 				DCAEBF382383581F00141D2D /* EditTextViewController.swift in Sources */,
 				243CDB4B22665F1800637B6B /* TwilioColors.swift in Sources */,
 				DC3924912416A8070068E33F /* APIErrorResponseDecoder.swift in Sources */,
+				8B358592244CEE410036CD9B /* Member.swift in Sources */,
 				DCD7675223DBA3AA00A2939C /* DeepLinkStore.swift in Sources */,
 				DCA53949235F53E700CA26FB /* InternalAuthStore.swift in Sources */,
 				DC4568872385D5490069BB5A /* ViewControllerFactory.swift in Sources */,
@@ -2585,6 +2689,7 @@
 				DCF461622385B13000DD8FEA /* AdvancedSettingsViewModel.swift in Sources */,
 				DC1C2F7F23A445740044FB4D /* Notifications.swift in Sources */,
 				DCDCD37F241930A7004A30FC /* TwilioAccessTokenStoreFactory.swift in Sources */,
+				8B358596244CEE490036CD9B /* Message.swift in Sources */,
 				DCAEBF5423849C1C00141D2D /* VideoCodec.swift in Sources */,
 				DCA80B2D236C77C6009141C9 /* LaunchFlowFactory.swift in Sources */,
 				DCA5394D235F740200CA26FB /* AuthStore.swift in Sources */,
@@ -2614,6 +2719,7 @@
 				DCAEBF1D2383342C00141D2D /* DestructiveButtonCell.swift in Sources */,
 				DCD940BA243BD6DA00D9ECC5 /* LocalVideoTrackHelpers.swift in Sources */,
 				DCEC3D0B238608B500EBDEBF /* EditUserIdentityViewModelFactory.swift in Sources */,
+				8B35859A245404790036CD9B /* StringHash.swift in Sources */,
 				DCD7674C23DA336600A2939C /* DeepLink.swift in Sources */,
 				DCA53951235F765D00CA26FB /* AuthFlow.swift in Sources */,
 				8AC4999B232A18D2005A4B35 /* SceneDelegate.swift in Sources */,
@@ -2644,8 +2750,10 @@
 				DC39248B2416A1D80068E33F /* SelectEnvironmentViewModelFactory.swift in Sources */,
 				DCEC3D1023860BBC00EBDEBF /* UITableViewHelpers.swift in Sources */,
 				DC44C2C423870D0800205174 /* BasicCell.swift in Sources */,
+				8B358595244CEE460036CD9B /* MessageSender.swift in Sources */,
 				DC8AA8D52367A399006C06D5 /* TestSceneDelegate.swift in Sources */,
 				DC1C2F9023AC30070044FB4D /* AppInfoStoreFactory.swift in Sources */,
+				8B3585A02455DE240036CD9B /* WebSocketService.swift in Sources */,
 				DC8EAE4A23BA9F390045018F /* WindowSceneObserving.swift in Sources */,
 				DC1C2F9423AC34B30044FB4D /* BundleProtocol.swift in Sources */,
 				DCEC3D1523861C9800EBDEBF /* SelectOptionViewModelFactory.swift in Sources */,
@@ -2676,11 +2784,13 @@
 				DCB7C18B2405BE40009DEA70 /* KeychainStore.swift in Sources */,
 				DCAEBF452384450300141D2D /* SelectVideoCodecViewModel.swift in Sources */,
 				DCB64B4B240995A100E090BE /* APIHTTPMethod.swift in Sources */,
+				8B35858D244C97950036CD9B /* ChatViewController.swift in Sources */,
 				DCF4615723859BB800DD8FEA /* AppInfoStore.swift in Sources */,
 				DCA53956235F89BE00CA26FB /* CommunityAuthStore.swift in Sources */,
 				DCAEBF392383581F00141D2D /* EditTextViewController.swift in Sources */,
 				243CDB4C22665F1800637B6B /* TwilioColors.swift in Sources */,
 				DC3924922416A8070068E33F /* APIErrorResponseDecoder.swift in Sources */,
+				8B358593244CEE420036CD9B /* Member.swift in Sources */,
 				DCD7675323DBA3AA00A2939C /* DeepLinkStore.swift in Sources */,
 				DCA5394A235F53E700CA26FB /* InternalAuthStore.swift in Sources */,
 				DC4568882385D5490069BB5A /* ViewControllerFactory.swift in Sources */,
@@ -2717,6 +2827,7 @@
 				DCF461632385B13000DD8FEA /* AdvancedSettingsViewModel.swift in Sources */,
 				DC1C2F8023A445740044FB4D /* Notifications.swift in Sources */,
 				DCDCD380241930A7004A30FC /* TwilioAccessTokenStoreFactory.swift in Sources */,
+				8B358597244CEE490036CD9B /* Message.swift in Sources */,
 				DCAEBF5523849C1C00141D2D /* VideoCodec.swift in Sources */,
 				DCA80B2E236C77C6009141C9 /* LaunchFlowFactory.swift in Sources */,
 				DCA5394E235F740200CA26FB /* AuthStore.swift in Sources */,
@@ -2746,6 +2857,7 @@
 				DCAEBF1E2383342C00141D2D /* DestructiveButtonCell.swift in Sources */,
 				DCD940BB243BD6DA00D9ECC5 /* LocalVideoTrackHelpers.swift in Sources */,
 				DCEC3D0C238608B500EBDEBF /* EditUserIdentityViewModelFactory.swift in Sources */,
+				8B35859B2454047A0036CD9B /* StringHash.swift in Sources */,
 				DCD7674D23DA336600A2939C /* DeepLink.swift in Sources */,
 				DCA53952235F765D00CA26FB /* AuthFlow.swift in Sources */,
 				8AC4999C232A18D2005A4B35 /* SceneDelegate.swift in Sources */,

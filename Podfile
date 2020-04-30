@@ -15,7 +15,10 @@ target 'Video-Twilio' do
   pod 'FirebaseUI/Auth', '8.4.0'
   pod 'FirebaseUI/Google', '8.4.0'
   pod 'KeychainAccess', '4.1.0'
-
+  pod 'MessageKit'
+  pod 'Starscream', '~> 4.0.0'
+  pod 'SwiftyJSON', '~> 4.0'
+  
   target 'Video-TwilioTests' do
     pod 'Nimble'
     pod 'Quick'

@@ -99,7 +99,12 @@ PODS:
   - GTMSessionFetcher/Core (1.3.0)
   - GTMSessionFetcher/Full (1.3.0):
     - GTMSessionFetcher/Core (= 1.3.0)
+  - InputBarAccessoryView (4.3.2):
+    - InputBarAccessoryView/Core (= 4.3.2)
+  - InputBarAccessoryView/Core (4.3.2)
   - KeychainAccess (4.1.0)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -107,6 +112,8 @@ PODS:
   - nanopb/encode (0.3.9011)
   - Nimble (8.0.5)
   - Quick (2.2.0)
+  - Starscream (4.0.3)
+  - SwiftyJSON (4.3.0)
   - TwilioVideo (3.2.2)
 
 DEPENDENCIES:
@@ -117,14 +124,16 @@ DEPENDENCIES:
   - FirebaseUI/Auth (= 8.4.0)
   - FirebaseUI/Google (= 8.4.0)
   - KeychainAccess (= 4.1.0)
+  - MessageKit
   - Nimble
   - Quick
+  - Starscream (~> 4.0.0)
+  - SwiftyJSON (~> 4.0)
   - TwilioVideo (~> 3.2)
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - Alamofire
-    - AppAuth
     - AppCenter
     - Crashlytics
     - Fabric
@@ -132,7 +141,6 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseAuthInterop
-    - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
     - FirebaseInstanceID
@@ -141,14 +149,21 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleSignIn
-    - GoogleUtilities
     - GTMAppAuth
-    - GTMSessionFetcher
+    - InputBarAccessoryView
     - KeychainAccess
-    - nanopb
+    - MessageKit
     - Nimble
     - Quick
+    - Starscream
+    - SwiftyJSON
     - TwilioVideo
+  https://github.com/CocoaPods/Specs.git:
+    - AppAuth
+    - FirebaseCore
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - nanopb
 
 SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
@@ -172,12 +187,16 @@ SPEC CHECKSUMS:
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
+  InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
   KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  Starscream: ef06f0961fff0880bca0604416d61141e4faca67
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TwilioVideo: 996f6c2b06f7d3d49f5d4e7cd80a19b0d07f4625
 
-PODFILE CHECKSUM: d922c034a0992e722444cf2a0977772142697d9b
+PODFILE CHECKSUM: 6ff9d4d8db1df22e0480d404ef045482b34e233c
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

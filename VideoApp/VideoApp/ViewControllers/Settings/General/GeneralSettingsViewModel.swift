@@ -47,7 +47,7 @@ class GeneralSettingsViewModel: SettingsViewModel {
             )
         ]
 
-        if appInfoStore.appInfo.target == .videoInternal {
+        if appInfoStore.appInfo.target == .videoCommunity || appInfoStore.appInfo.target == .videoInternal {
             sections.append(
                 SettingsViewModelSection(
                     rows: [
