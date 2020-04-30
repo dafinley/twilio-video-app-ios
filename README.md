@@ -87,7 +87,7 @@ You can subscribe to the websocket server over [Go Chat Websocket](wss://chat.st
 The UI for the chat interface is powered by MessageKit
 
 Once you login with the passcode and join a room you will see a floating chat icon to the right
-[Floating Chat icon](https://user-images.githubusercontent.com/441184/80668409-d5ba9800-8a6f-11ea-8a14-957e37c62f77.png)
+![Floating Chat icon](https://user-images.githubusercontent.com/441184/80668409-d5ba9800-8a6f-11ea-8a14-957e37c62f77.png)
 
 
 ## Tests
