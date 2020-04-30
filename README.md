@@ -3,10 +3,12 @@
 This app is a sample video conferencing app that uses the [Twilio Programmable Video SDK](https://www.twilio.com/docs/video/ios). The open source app can be easily configured by developers to try out real-time video and audio features. Converting Objective-C code to Swift is in progress.
 
 ![video-app-screenshots](https://user-images.githubusercontent.com/1930363/76462720-c2f8e080-63a7-11ea-9b15-d4326636c42c.png)
+![websocket-chat-screenshots](https://user-images.githubusercontent.com/441184/80667948-7f008e80-8a6e-11ea-9fde-69d1ae96666b.png)
 
 ## Features
 
 - [x] Video conferencing with real-time video and audio
+- [x] Realtime chat over websockets
 - [x] Enable/disable camera
 - [x] Mute/unmute mic
 - [x] Switch between front and back camera
@@ -79,6 +81,14 @@ The passcode will expire after one week. Follow the steps below to sign in with 
 1. [Generate a new passcode](#deploy-twilio-access-token-server).
 1. In the app tap `Settings > Sign Out`.
 1. Repeat the [steps above](#start-video-conference).
+
+### Chat over Websockets
+You can subscribe to the websocket server over [Go Chat Websocket](wss://chat.starlineventures.com/subscribe)
+The UI for the chat interface is powered by MessageKit
+
+Once you login with the passcode and join a room you will see a floating chat icon to the right
+[Floating Chat icon](https://user-images.githubusercontent.com/441184/80668145-1665e180-8a6f-11ea-9823-6f2c99467cd7.png)
+
 
 ## Tests
 
