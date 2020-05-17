@@ -85,6 +85,9 @@
 		8B35859E2455DC200036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
 		8B35859F2455DE230036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
 		8B3585A02455DE240036CD9B /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35859D2455DC200036CD9B /* WebSocketService.swift */; };
+		8B5E459C246B839900F27CFE /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E459B246B839900F27CFE /* DateHelpers.swift */; };
+		8B5E459D246B839900F27CFE /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E459B246B839900F27CFE /* DateHelpers.swift */; };
+		8B5E459E246B839900F27CFE /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E459B246B839900F27CFE /* DateHelpers.swift */; };
 		AE0CFB3237FBE318B731B713 /* Pods_Video_Twilio_Video_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E708CB2AB7DFB73C47D7AB38 /* Pods_Video_Twilio_Video_Community.framework */; };
 		B9C6EDCF2651C8C600E239F6 /* Pods_Video_Twilio_Video_TwilioTests_Video_InternalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ADEE0522D37947FC5C015A /* Pods_Video_Twilio_Video_TwilioTests_Video_InternalTests.framework */; };
 		C5FC580267C650371E9AB56B /* Pods_Video_Twilio_Video_Internal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56431190FD8D2B0FFBB6F56 /* Pods_Video_Twilio_Video_Internal.framework */; };
@@ -561,6 +564,7 @@
 		8B358590244CED180036CD9B /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		8B358598245317680036CD9B /* StringHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHash.swift; sourceTree = "<group>"; };
 		8B35859D2455DC200036CD9B /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		8B5E459B246B839900F27CFE /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
 		97650562A7ED4405DB1FC500 /* Pods-Video-Twilio-Video-Internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-Internal.debug.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-Internal/Pods-Video-Twilio-Video-Internal.debug.xcconfig"; sourceTree = "<group>"; };
 		97E391D410028974C4641B09 /* Pods-Video-Twilio-Video-TwilioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; path = "Target Support Files/Pods-Video-Twilio-Video-TwilioTests/Pods-Video-Twilio-Video-TwilioTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10066E39687E61F986470C1 /* Pods_Video_Twilio_Video_TwilioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Video_Twilio_Video_TwilioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1129,6 +1133,7 @@
 				DCEC3D0D23860BBC00EBDEBF /* UITableViewHelpers.swift */,
 				DCC7E3542406ED3900431AC3 /* UserDefaultsProtocol.swift */,
 				8B358598245317680036CD9B /* StringHash.swift */,
+				8B5E459B246B839900F27CFE /* DateHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -2531,6 +2536,7 @@
 				24927E2F1ECC9E44006510E3 /* RoomViewController.m in Sources */,
 				DC44C2E223875C4F00205174 /* StringHelpers.swift in Sources */,
 				DCF4614C238598C700DD8FEA /* SettingsViewModel.swift in Sources */,
+				8B5E459C246B839900F27CFE /* DateHelpers.swift in Sources */,
 				DCC7E36A24085AD800431AC3 /* APIError.swift in Sources */,
 				DC8AA8AD236228A3006C06D5 /* AuthStoreFactory.swift in Sources */,
 				DCDCD37A2419306E004A30FC /* CommunityTwilioAccessTokenStore.swift in Sources */,
@@ -2669,6 +2675,7 @@
 				DCB7C18F2405C0BE009DEA70 /* KeychainStorage.swift in Sources */,
 				4B00122B1FBA52C4004A587E /* RoomViewController.m in Sources */,
 				DC44C2E323875C4F00205174 /* StringHelpers.swift in Sources */,
+				8B5E459D246B839900F27CFE /* DateHelpers.swift in Sources */,
 				DCF4614D238598C700DD8FEA /* SettingsViewModel.swift in Sources */,
 				DCC7E36B24085AD800431AC3 /* APIError.swift in Sources */,
 				DC8AA8AE236228A3006C06D5 /* AuthStoreFactory.swift in Sources */,
@@ -2807,6 +2814,7 @@
 				DCB7C1902405C0BE009DEA70 /* KeychainStorage.swift in Sources */,
 				4B0012681FBA52E5004A587E /* RoomViewController.m in Sources */,
 				DC44C2E423875C4F00205174 /* StringHelpers.swift in Sources */,
+				8B5E459E246B839900F27CFE /* DateHelpers.swift in Sources */,
 				DCF4614E238598C700DD8FEA /* SettingsViewModel.swift in Sources */,
 				DCC7E36C24085AD800431AC3 /* APIError.swift in Sources */,
 				DC8AA8AF236228A3006C06D5 /* AuthStoreFactory.swift in Sources */,

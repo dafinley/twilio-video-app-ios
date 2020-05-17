@@ -23,6 +23,8 @@ struct Message {
   let sender: SenderType
   let text: String
   let messageId: String
+  let created: Date
+  let room: String
 }
 
 extension Message: MessageType {
@@ -32,7 +34,9 @@ extension Message: MessageType {
           "id": messageId,
         "text": text,
         "senderId": sender.senderId,
-        "name": sender.displayName
+        "name": sender.displayName,
+        "created": created.millisecondsSince1970,
+        "room": room
       ]
     }
     
@@ -41,7 +45,9 @@ extension Message: MessageType {
         let text = data["text"] as? String,
         let id = data["id"] as? String,
         let senderId = data["senderId"] as? String,
-        let name: String = data["name"] as? String
+        let name: String = data["name"] as? String,
+        let room: String = data["room"] as? String,
+        let created: Int64 = data["created"] as? Int64
         else {
           print("Couldn't parse Message")
           return nil
@@ -50,10 +56,12 @@ extension Message: MessageType {
         self.sender = MessageSender(senderId: senderId, name: name)
         self.text = text
         self.messageId = id
+        self.created = Date(milliseconds: created)
+        self.room = room
     }
   
   var sentDate: Date {
-    return Date()
+    return created
   }
   
   var kind: MessageKind {

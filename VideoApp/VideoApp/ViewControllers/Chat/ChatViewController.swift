@@ -47,7 +47,7 @@ import SwiftyJSON
         messageInputBar.delegate = self
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.addSubview(refreshControl)
-        socketService = WebSocketService(wsd: self)
+        socketService = WebSocketService(wsd: self, room: roomName.md5)
     
         if let layout = messagesCollectionView.collectionViewLayout as? MessagesCollectionViewFlowLayout {
           layout.setMessageIncomingAvatarSize(.zero)
@@ -55,8 +55,6 @@ import SwiftyJSON
         }
         
     }
-    
-    
     
     
     func insertMessage(_ message: Message) {
@@ -85,10 +83,11 @@ import SwiftyJSON
         super.viewDidAppear(animated)
         let m = Message(sender: roomSender,
         text: "Welcome " + SwiftToObjc.userDisplayName + ", You have joined " + roomName,
-        messageId: UUID().uuidString)
-        socketService.writePOST(msg: m)
+        messageId: UUID().uuidString, created: Date(), room: roomName.md5)
+        socketService.writePOST(msg: m, room: roomName.md5)
         
     }
+    
     
     // MARK: - WebSocketDelegate
     func didReceive(event: WebSocketEvent, client: WebSocket) {
@@ -112,19 +111,23 @@ import SwiftyJSON
                 }
             }
             
-            
         case .binary(let data):
             print("Received data: \(data.count)")
         case .ping(_):
+            print("websocket ping")
             break
         case .pong(_):
+            print("websocket pong")
             break
         case .viabilityChanged(_):
+            print("websocket viability changed")
             break
         case .reconnectSuggested(_):
+            print("websocket recconect suggested")
             break
         case .cancelled:
             socketService.isConnected = false
+            print("weboscket cancelled")
         case .error(let error):
             socketService.isConnected = false
             socketService.handleError(error)
@@ -211,8 +214,8 @@ extension ChatViewController: InputBarAccessoryViewDelegate {
       for component in data {
           if let str = component as? String {
             
-            let message = Message(sender: userSender, text: str, messageId: UUID().uuidString)
-            socketService.writePOST(msg: message)
+            let message = Message(sender: userSender, text: str, messageId: UUID().uuidString, created: Date(), room: roomName.md5)
+            socketService.writePOST(msg: message, room: roomName.md5)
           }
       }
   }

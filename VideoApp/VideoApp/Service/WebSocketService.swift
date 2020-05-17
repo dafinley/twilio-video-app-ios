@@ -25,10 +25,10 @@ class WebSocketService {
     let socket: WebSocket!
     var isConnected = false
     
-    public init(wsd: WebSocketDelegate){
-        socketURL = URLRequest(url: URL(string: "wss://chat.starlineventures.com/subscribe")!)
+    public init(wsd: WebSocketDelegate, room: String){
+        let chatUrl = "wss://chat.starlineventures.com/subscribe/" + room
+        socketURL = URLRequest(url: URL(string: chatUrl)!)
 
-        socketURL.timeoutInterval = 5
         socket = WebSocket(request: socketURL)
         socket.delegate = wsd;
         socket.connect()
@@ -41,10 +41,10 @@ class WebSocketService {
         socket.write(string: str)
     }
     
-    func writePOST(msg: Message?){
+    func writePOST(msg: Message?, room: String){
         let params: Parameters = msg!.toJSON
         let headers: HTTPHeaders = ["Content-Type": "application/json"]
-        AF.request("https://chat.starlineventures.com/publish",
+        AF.request("https://chat.starlineventures.com/publish/" + room,
                    method: .post,
                    parameters: params,
                    encoding: JSONEncoding.prettyPrinted,
