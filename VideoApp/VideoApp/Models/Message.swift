@@ -50,6 +50,8 @@ extension Message: MessageType {
         let created: Int64 = data["created"] as? Int64
         else {
           print("Couldn't parse Message")
+            
+            
           return nil
       }
 
@@ -58,6 +60,14 @@ extension Message: MessageType {
         self.messageId = id
         self.created = Date(milliseconds: created)
         self.room = room
+    }
+    
+    init?(senderId: String, name: String, room: String, text: String) {
+        self.sender = MessageSender(senderId: senderId, name: name)
+        self.text = text
+        self.messageId = ""
+        self.created = Date()
+        self.room = ""
     }
   
   var sentDate: Date {

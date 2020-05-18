@@ -104,9 +104,11 @@ import SwiftyJSON
             print(string)
             if let dataFromString = json!.data(using: .utf8, allowLossyConversion: false) {
                 do {
-                    let j: JSON =  try! JSON(data: dataFromString)
-                    
+                    let j: JSON =  try JSON(data: dataFromString)
                     let m: Message = Message(fromJSON: (j.dictionaryObject!))!
+                    insertMessage(m)
+                } catch {
+                    let m: Message = Message(senderId: UUID().uuidString, name: "", room: roomName, text: json!)!
                     insertMessage(m)
                 }
             }
